@@ -1,74 +1,4 @@
-<style>
-  body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-  body, html {
-    height: 100%;
-    color: #777;
-    line-height: 1.8;
-  }
-
-  /* Create a Parallax Effect */
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  /* First image (Logo. Full height) */
-  .bgimg-1 {
-    background-image: url(https://gastroben.s3.amazonaws.com/bendev/codelounge.jpg);
-    min-height: 100%;
-  }
-
-  /* Second image (Portfolio) */
-  .bgimg-2 {
-    background-image: url(https://gastroben.s3.amazonaws.com/Self/barberlake.jpg);
-    min-height: 400px;
-  }
-
-  /* Third image (Contact) */
-  .bgimg-3 {
-    background-image: url(https://gastroben.s3.amazonaws.com/Self/abacoafilter.jpg);
-    min-height: 400px;
-  }
-
-  .gastroDev-wide {letter-spacing: 10px;}
-  .gastroDev-hover-opacity {cursor: pointer;}
-
-  /* Turn off parallax scrolling for tablets and phones */
-  @media only screen and (max-device-width: 1600px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-      background-attachment: scroll;
-      min-height: 400px;
-    }
-  }
-</style>
-
-
-<!-- Navbar (sit on top) -->
-<div class="gastroDev-top">
-  <div class="gastroDev-bar" id="myNavbar">
-    <a class="gastroDev-bar-item gastroDev-button gastroDev-hover-black gastroDev-hide-medium gastroDev-hide-large gastroDev-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="gastroDev-bar-item gastroDev-button">HOME</a>
-    <a href="#about" class="gastroDev-bar-item gastroDev-button gastroDev-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="gastroDev-bar-item gastroDev-button gastroDev-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="gastroDev-bar-item gastroDev-button gastroDev-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="gastroDev-bar-item gastroDev-button gastroDev-hide-small gastroDev-right gastroDev-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="gastroDev-bar-block gastroDev-white gastroDev-hide gastroDev-hide-large gastroDev-hide-medium">
-    <a href="#about" class="gastroDev-bar-item gastroDev-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="gastroDev-bar-item gastroDev-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="gastroDev-bar-item gastroDev-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="gastroDev-bar-item gastroDev-button">SEARCH</a>
-  </div>
-</div>
-
+<%= render 'blox/navbar' %>
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 gastroDev-display-container gastroDev-opacity-min" id="home">
   <div class="gastroDev-display-middle" style="white-space:nowrap;">
@@ -86,7 +16,7 @@
   <div class="gastroDev-row">
     <div class="gastroDev-col m6 gastroDev-center gastroDev-padding-large">
       <p><b><i class="fa fa-user gastroDev-margin-right"></i>Ben Sommerville</b></p><br>
-      <img src="https://gastroben.s3.amazonaws.com/Self/ferryport.jpg" class="gastroDev-round gastroDev-image gastroDev-opacity gastroDev-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+      <img src="https://gastroben.s3.amazonaws.com/Self/wpbfilter.jpg" class="gastroDev-round gastroDev-image gastroDev-opacity gastroDev-hover-opacity-off" alt="Photo of Me" width="500" height="333">
     </div>
 
     <!-- Hide this text on small devices -->
@@ -111,6 +41,52 @@
   </div>
 </div>
 
+<div class="row services text-center">
+          <div data-animate="fadeInUp" class="col-lg-3">
+            <div class="icon">
+              <i class="devicon-html5-plain colored" style='font-size:48px;'></i>
+              <i class="devicon-css3-plain-wordmark" style='font-size:48px;'></i>
+              <i class="devicon-ruby-plain colored"style='font-size:48px;'></i></i>
+              <i class="devicon-javascript-plain" style='font-size:48px;'></i>
+            </br>
+              <i class="devicon-postgresql-plain-wordmark colored" style='font-size:48px;'></i>
+              <i class="devicon-linux-plain" style='font-size:48px;'></i>
+              <i class="devicon-git-plain" style='font-size:48px;'></i>
+              <i class="devicon-heroku-original-wordmark colored" style='font-size:48px;'></i>
+            </br>
+              <i class="devicon-java-plain-wordmark" style='font-size:48px;'></i>
+              <i class="devicon-slack-plain colored" style='font-size:48px;'></i>
+              <i class="devicon-python-plain-wordmark colored" style='font-size:48px;'></i>
+              <i class="devicon-django-line-wordmark" style='font-size:48px;'></i>
+            </div>
+            <h3 class="heading mb-3 text-400">Full Stack Dev</h3>
+            <p class="text-center description">Listed in order of experience</p>
+          </div>
+
+          <div data-animate="fadeInUp" class="col-lg-3">
+            <div class="icon"><i class="fa fa-coffee"></i></div>
+            <h3 class="heading mb-3 text-400">Hospitality</h3>
+            <p class="text-center description">10+ Years of service industry experience.</p>
+          </div>
+
+          <div data-animate="fadeInUp" class="col-lg-3">
+            <div class="icon">
+              <i class="fas fa-tools" style='font-size:48px;'></i>
+            </div>
+            <h3 class="heading mb-3 text-400">Mech and Tech</h3>
+            <p class="text-center description">Automotive repair, A/V setup, computer repair</p>
+          </div>
+
+          <div data-animate="fadeInUp" class="col-lg-3">
+            <div class="icon">
+              <i class="fas fa-cash-register" style='font-size:48px;'></i>
+            </div>
+            <h3 class="heading mb-3 text-400">Sales</h3>
+            <p class="text-center description">Automotive, service industry, construction, tech, B2C.</p>
+          </div>
+
+        </div>
+
 <div class="gastroDev-row gastroDev-center gastroDev-dark-grey gastroDev-padding-16">
   <div class="gastroDev-quarter gastroDev-section">
     <span class="gastroDev-xlarge">14+</span><br>
@@ -130,6 +106,7 @@
   </div>
 </div>
 
+
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 gastroDev-display-container gastroDev-opacity-min">
   <div class="gastroDev-display-middle">
@@ -145,11 +122,11 @@
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="gastroDev-row-padding gastroDev-center">
     <div class="gastroDev-col m3">
-      <img src="https://gastroben.s3.amazonaws.com/Self/ams.jpg" style="width:100%" onclick="onClick(this)" class="gastroDev-hover-opacity" alt="The mist over the mountains">
+      <img src="https://gastroben.s3.amazonaws.com/Self/ams.jpg" style="width:100%" onclick="onClick(this)" class="gastroDev-hover-opacity" alt="Freezing in the Europe on my anti-valentines day vacation.">
     </div>
 
     <div class="gastroDev-col m3">
-      <img src="https://gastroben.s3.amazonaws.com/Self/ams.jpg" style="width:100%" onclick="onClick(this)" class="gastroDev-hover-opacity" alt="Coffee beans">
+      <img src="https://gastroben.s3.amazonaws.com/Self/tron.jpeg" style="width:100%" onclick="onClick(this)" class="gastroDev-hover-opacity" alt="Tron Master">
     </div>
 
     <div class="gastroDev-col m3">
@@ -163,23 +140,75 @@
 
   <div class="gastroDev-row-padding gastroDev-center gastroDev-section">
     <div class="gastroDev-col m3">
-      <img src="https://gastroben.s3.amazonaws.com/Self/ams.jpg" style="width:100%" onclick="onClick(this)" class="gastroDev-hover-opacity" alt="The mist">
+      <img src="https://gastroben.s3.amazonaws.com/Self/thaibar.jpg" style="width:100%" onclick="onClick(this)" class="gastroDev-hover-opacity" alt="A little bit of editing to my Thai beer garden photo">
     </div>
 
     <div class="gastroDev-col m3">
-      <img src="https://gastroben.s3.amazonaws.com/Self/ams.jpg" style="width:100%" onclick="onClick(this)" class="gastroDev-hover-opacity" alt="My beloved typewriter">
+      <img src="https://gastroben.s3.amazonaws.com/Self/thaibar.jpg" style="width:100%" onclick="onClick(this)" class="gastroDev-hover-opacity" alt="My beloved typewriter">
     </div>
 
     <div class="gastroDev-col m3">
-      <img src="https://gastroben.s3.amazonaws.com/Self/ams.jpg" style="width:100%" onclick="onClick(this)" class="gastroDev-hover-opacity" alt="Empty ghost train">
+      <img src="https://gastroben.s3.amazonaws.com/Self/thaibar.jpg" style="width:100%" onclick="onClick(this)" class="gastroDev-hover-opacity" alt="Empty ghost train">
     </div>
 
     <div class="gastroDev-col m3">
-      <img src="https://gastroben.s3.amazonaws.com/Self/ams.jpg" style="width:100%" onclick="onClick(this)" class="gastroDev-hover-opacity" alt="Sailing">
+      <img src="https://gastroben.s3.amazonaws.com/Self/thaibar.jpg" style="width:100%" onclick="onClick(this)" class="gastroDev-hover-opacity" alt="Sailing">
     </div>
-    <button class="gastroDev-button gastroDev-padding-large gastroDev-light-grey" style="margin-top:64px">LOAD MORE</button>
   </div>
 </div>
+
+<!-- App (Portfolio Section) -->
+<div class="container card-columns">
+  <div class="card" style="width:300px">
+    <img class="card-img-top" src="https://gastroben.s3.amazonaws.com/Self/geitnerrealtor.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Geitner Realtor </h4>
+      <p class="card-text">Rails app with ActiveAdmin to create property listings from backend.</p>
+      <a href="https://whispering-sea-49760.herokuapp.com/" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  <div class="card" style="width:300px">
+    <img class="card-img-top" src="https://gastroben.s3.amazonaws.com/Self/resttemp1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Restaurant Template 1</h4>
+      <p class="card-text">Rails app with custom back end to add menu items to front end with filter for display.  </p>
+      <a href="https://resttemp.herokuapp.com/" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  <div class="card" style="width:300px">
+    <img class="card-img-top" src="https://gastroben.s3.amazonaws.com/Self/reactrec.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">React app</h4>
+      <p class="card-text">Simple recipie app built with react</p>
+      <a href="https://reactbloggastro.herokuapp.com/" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  <div class="card" style="width:300px">
+    <img class="card-img-top" src="https://gastroben.s3.amazonaws.com/Self/basic .png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">CRUD template</h4>
+      <p class="card-text">Plain rails app with ActiveAdmin CRUD backend</p>
+      <a href="https://mysterious-castle-65360.herokuapp.com/" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  <div class="card" style="width:300px">
+    <img class="card-img-top" src="https://gastroben.s3.amazonaws.com/Self/resttemp2.jpeg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Restaurant Template 2</h4>
+      <p class="card-text">Restaurant template 2 with JS menu display</p>
+      <a href="https://lit-tor-84285.herokuapp.com/" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  <div class="card" style="width:300px">
+    <img class="card-img-top" src="https://gastroben.s3.amazonaws.com/Self/dashbrd.jpeg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Blog Template</h4>
+      <p class="card-text">Rails app with users, blog and public messages displayed in custom backend dashboard</p>
+      <a href="https://gastronomicdev.herokuapp.com/" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+</div>
+
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="gastroDev-modal gastroDev-black" onclick="this.style.display='none'">
@@ -204,7 +233,7 @@
 
   <div class="gastroDev-row gastroDev-padding-32 gastroDev-section">
     <div class="gastroDev-col m4 gastroDev-container">
-      <img src="https://www.w3schools.com/w3images/map.jpg" class="gastroDev-image gastroDev-round" style="width:100%">
+      <img src="https://gastroben.s3.amazonaws.com/Self/jupiterbeach.jpg" class="gastroDev-image gastroDev-round" style="width:100%">
     </div>
     <div class="gastroDev-col m8 gastroDev-panel">
       <div class="gastroDev-large gastroDev-margin-bottom">
@@ -231,49 +260,7 @@
   </div>
 </div>
 
-<!-- Footer -->
-<footer class="gastroDev-center gastroDev-black gastroDev-padding-64 gastroDev-opacity gastroDev-hover-opacity-off">
-  <a href="#home" class="gastroDev-button gastroDev-light-grey"><i class="fa fa-arrow-up gastroDev-margin-right"></i>To the top</a>
-  <div class="gastroDev-xlarge gastroDev-section">
-    <i class="fa fa-facebook-official gastroDev-hover-opacity"></i>
-    <i class="fa fa-instagram gastroDev-hover-opacity"></i>
-    <i class="fa fa-snapchat gastroDev-hover-opacity"></i>
-    <i class="fa fa-pinterest-p gastroDev-hover-opacity"></i>
-    <i class="fa fa-twitter gastroDev-hover-opacity"></i>
-    <i class="fa fa-linkedin gastroDev-hover-opacity"></i>
-  </div>
-  <p>Powered by <a href="#" title="gastroDev.CSS" target="_blank" class="gastroDev-hover-text-green">gastroDev.css</a></p>
-</footer>
 
-<script type="text/javascript">
 
-  // Modal Image Gallery
-  function onClick(element) {
-    document.getElementById("img01").src = element.src;
-    document.getElementById("modal01").style.display = "block";
-    var captionText = document.getElementById("caption");
-    captionText.innerHTML = element.alt;
-  }
-
-  // Change style of navbar on scroll
-  window.onscroll = function() {myFunction()};
-  function myFunction() {
-      var navbar = document.getElementById("myNavbar");
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-          navbar.className = "gastroDev-bar" + " gastroDev-card" + " gastroDev-animate-top" + " gastroDev-white";
-      } else {
-          navbar.className = navbar.className.replace(" gastroDev-card gastroDev-animate-top gastroDev-white", "");
-      }
-  }
-
-  // Used to toggle the menu on small screens when clicking on the menu button
-  function toggleFunction() {
-      var x = document.getElementById("navDemo");
-      if (x.className.indexOf("gastroDev-show") == -1) {
-          x.className += " gastroDev-show";
-      } else {
-          x.className = x.className.replace(" gastroDev-show", "");
-      }
-  }
-
-</script>
+<%= render 'blox/footer' %>
+<%= render 'blox/parallax' %>

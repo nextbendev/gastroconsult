@@ -56,3 +56,6 @@ body, html {
     min-height: 400px;
   }
 }
+
+
+<button class="gastroDev-button gastroDev-padding-large gastroDev-light-grey" style="margin-top:64px">LOAD MORE</button>
