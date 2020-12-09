@@ -1,0 +1,25 @@
+<style media="screen">
+  body {
+    background-image: url(https://gastroben.s3.amazonaws.com/bendev/codelounge.jpg);
+      background-position: center;
+  }
+
+
+
+.centerGastro {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  justify-content: center;
+}
+</style>
+
+
+<div class="containerGastro">
+  <div class="centerGastro">
+    <%= link_to "Enter", templates_path, :class => 'btn btn-primary'  %>
+  </div>
+</div>

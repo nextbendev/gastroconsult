@@ -15,8 +15,17 @@
  *= require_self
  */
 
-
  footer { margin-top: 100px; }
  table, td, th { vertical-align: middle; border: none; }
  th { border-bottom: 1px solid #DDD; }
- body { margin: 0; }
+ body {
+   margin: 0;
+
+
+ }
+ body,h1 {font-family: "Raleway", sans-serif}
+ body, html {height: 100%}
+ .bgimg {
+   background-image: url(https://gastroben.s3.amazonaws.com/Self/51877464_10155807423645059_738272979460292608_o.jpg);
+     background-position: center;
+ }
