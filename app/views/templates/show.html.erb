@@ -12,7 +12,7 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= @template.picture %>
+  <%= image_tag(@template.picture_url, width: 600) if @template.picture.present? %>
 </p>
 
 <%= link_to 'Edit', edit_template_path(@template) %> |
