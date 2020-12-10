@@ -59,3 +59,14 @@ body, html {
 
 
 <button class="gastroDev-button gastroDev-padding-large gastroDev-light-grey" style="margin-top:64px">LOAD MORE</button>
+
+
+
+<p class="gastroDev-center"><em>I love coding</em></p>
+<p>We have created a fictional "personal" website/blog, and our fictional character is a hobby coder. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+  qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+
+
+<span class="gastroDev-center gastroDev-padding-large gastroDev-black gastroDev-xlarge gastroDev-wide gastroDev-animate-opacity">Gastronomic Consulting</span>
